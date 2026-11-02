@@ -27,3 +27,12 @@ This is not a complete implementation of all approved Steps 1–195. Outstanding
 
 ## Safety
 The platform's expected payout numbers are unverified user-provided reference values. This app cannot verify platform legitimacy, ensure payouts, or initiate purchases. Do not enter wallet secrets, private keys, or passwords.
+
+
+## Version 0.2 update
+- iPhone status-bar safe-area spacing and narrower date form controls.
+- Withdrawal requests are tracked separately as pending, and can be marked received; pending requests never change balances.
+- Plans can be saved with zero reserved funds; cost and shortfall are displayed.
+- Existing v0.1 IndexedDB records are retained by the unchanged database key.
+- After uploading replacement files, close and reopen the Home Screen app. If old files persist, reload the Safari site and reopen; do not clear website data because that can delete local records.
+- This is still an early prototype; advanced scenario engine, full reconciliation, reports, and robust editing are not complete. Do not use as your sole financial ledger.
