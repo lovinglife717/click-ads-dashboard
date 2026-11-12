@@ -2,3 +2,11 @@
 
 /* v0.2: iPhone safe-area and narrow-screen form layout */
 html{overflow-x:hidden}body{overflow-x:hidden}header{padding-top:calc(13px + env(safe-area-inset-top, 0px));min-height:calc(66px + env(safe-area-inset-top, 0px))}main{min-width:0}form .two{grid-template-columns:repeat(2,minmax(0,1fr))}form .field{min-width:0}input[type=date]{display:block;width:100%;max-width:100%;min-width:0;-webkit-appearance:none;appearance:none;font-size:16px}input,select,textarea{max-width:100%;font-size:16px}.card{min-width:0}.brand{min-width:0}.brand strong{white-space:nowrap}.status{white-space:nowrap}@media(max-width:390px){header{padding-left:12px;padding-right:12px}.brand strong{font-size:16px}.brand small{font-size:8px;letter-spacing:1px}.status{font-size:9px}form .two{grid-template-columns:1fr}}
+/* Keep transaction amounts on one line */
+.section .card .item.flex > strong {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+  flex-shrink: 0;
+}
+
