@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "click-ads-v02-fix-20261107";
+const CACHE_NAME = "click-ads-v03-fix-20261112";
 
 const APP_FILES = [
   "./",
